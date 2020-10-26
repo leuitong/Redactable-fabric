@@ -60,15 +60,10 @@ func FillPayload(PayloadBytes []byte)([]byte, []byte){
 		print("exist chamstruct in PaylaodBytes\n")
 		return nil,nil
 	}
-
 	chash := BytesChamHashFromBytes(PayloadBytes)
-
 	payload.Chamhash = chash
-
 	valuehash := HashValueFromChamHashBytes(chash)
-
 	filledPayloadBytes,_ := proto.Marshal(&payload)
-
 	return filledPayloadBytes, valuehash
 }
 ```
