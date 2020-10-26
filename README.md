@@ -17,7 +17,7 @@ type Payload struct {
 	Header *Header 
 	Data []byte 
 	// ChamHash, valueOfHash equals Hash(Payload(header,data,nil))
-    Chamhash []byte
+        Chamhash []byte
 }
 
 type ProposalResponsePayload struct {
@@ -25,7 +25,7 @@ type ProposalResponsePayload struct {
 	Extension []byte
 	// ChamHashStruct should be constructed in endorse statement and validated in
 	// committer statement. The ChamHashStruct is same as Chamhash definition.
-    ChamHashStruct []byte
+        ChamHashStruct []byte
 }
 ```
 ### Hash Computation
